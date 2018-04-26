@@ -1,0 +1,283 @@
+/* W3.CSS 4.10 February 2018 by Jan Egil and Borge Refsnes */
+ html{
+    box-sizing:border-box
+}
+*,*:before,*:after{
+    box-sizing:inherit
+}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+body,h1,h2,h3,h4,h5,h6 {
+		font-family: "Lato", sans-serif;
+}
+
+.w3-bar,h1,button {
+		font-family: "Montserrat", sans-serif;
+}
+
+.fa-anchor,.fa-coffee {
+		font-size: 200px;
+}
+		
+ html{
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%
+}
+body{
+    margin:0
+}
+ footer,header{
+    display:block;
+}
+ a{
+    background-color:transparent;
+    -webkit-text-decoration-skip:objects;
+}
+ a:active,a:hover{
+    outline-width:0;
+}
+ button{
+    font:inherit;
+    margin:0;
+}
+ button{
+    overflow:visible;
+}
+button{
+    text-transform:none;
+}
+ button{
+    -webkit-appearance:button;
+}
+ button::-moz-focus-inner{
+    border-style:none;
+    padding:0
+}
+ button:-moz-focusring{
+    outline:1px dotted ButtonText
+}
+ ::-webkit-input-placeholder{
+    color:inherit;
+    opacity:0.54;
+}
+ ::-webkit-file-upload-button{
+    -webkit-appearance:button;
+    font:inherit;
+}
+/* End extract */
+ html,body{
+    font-family:Verdana,sans-serif;
+    font-size:15px;
+    line-height:1.5;
+}
+html{
+    overflow-x:hidden;
+}
+ h1{
+    font-size:36px;
+}
+h5{
+    font-size:18px;
+}
+ h1,h5{
+    font-family:"Segoe UI",Arial,sans-serif;
+    font-weight:400;
+    margin:10px 0;
+}
+a{
+    color:inherit;
+}
+ .w3-button{
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+}
+ .w3-button{
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+}
+ .w3-button:disabled{
+    cursor:not-allowed;
+    opacity:0.3
+}
+ .w3-bar{
+    width:100%;
+    overflow:hidden
+}
+ .w3-bar .w3-bar-item{
+    padding:8px 16px;
+    float:left;
+    width:auto;
+    border:none;
+    display:block;
+    outline:0
+}
+ .w3-bar .w3-button{
+    white-space:normal
+}
+ .w3-bar-block .w3-bar-item{
+    width:100%;
+    display:block;
+    padding:8px 16px;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:none;
+    outline:0
+}
+ .w3-container:after,.w3-container:before,.w3-row-padding:after,.w3-row-padding:before,.w3-bar:before,.w3-bar:after{
+    content:"";
+    display:table;
+    clear:both
+}
+ .w3-third,.w3-twothird{
+    float:left;
+    width:100%
+}
+ @media (min-width:601px){
+    .w3-third{
+        width:33.33333%
+    }
+    .w3-twothird{
+        width:66.66666%
+    }
+}
+ .w3-content{
+    max-width:980px;
+    margin:auto
+}
+ .w3-hide{
+    display:none;
+}
+ @media (max-width:600px){
+     .w3-hide-small{
+        display:none;
+    }
+}
+ @media (min-width:993px){
+    .w3-hide-large{
+        display:none;
+    }
+}
+ @media (max-width:992px) and (min-width:601px){
+    .w3-hide-medium{
+        display:none;
+    }
+}
+ .w3-top{
+    position:fixed;
+    width:100%;
+    z-index:1;
+}
+.w3-top{
+    top:0;
+}
+ .w3-row-padding{
+    padding:0 8px;
+}
+ .w3-container{
+    padding:0.01em 16px;
+}
+
+/*shadow ng nav sa taas*/
+ .w3-card{
+    box-shadow:0 1px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+}
+
+/*font size ng buttons or links*/
+.w3-large{
+    font-size:16px;
+}
+
+/* Ung quote at template kalakifont size*/
+ .w3-xlarge{
+    font-size:24px;
+}
+
+/*Start page kung gano kalaki font size*/
+.w3-jumbo{
+    font-size:64px;
+}
+ .w3-left-align{
+    text-align:left;
+}
+
+/*lahat ng text sa may kulay red, dark gray tapos nung nsa babanung dark gray dudusog*/
+.w3-center{
+    text-align:center;
+}
+
+/*sa may start page tapos ung quote*/
+ .w3-margin{
+    margin:16px;
+}
+
+/* kung gaano kalayo ung space sa may TEMPLATE BY W3.css at get started*/
+.w3-margin-top{
+    margin-top:16px;
+}
+.w3-margin-right{
+    margin-right:16px;
+}
+
+/*button size ng get started*/
+.w3-padding-large{
+    padding:12px 24px;
+}
+ .w3-padding-32{
+    padding-top:32px;
+    padding-bottom:32px;
+}
+ .w3-padding-64{
+    padding-top:64px;
+    padding-bottom:64px;
+}
+.w3-right{
+    float:right;
+}
+
+/*kulay ng text at button na get started pag nag hover*/
+ .w3-button:hover{
+    color:#000;
+    background-color:#ccc;
+}
+/* Colors */
+/*top page ung color red*/
+ .w3-red{
+    color:#fff;
+    background-color:#f44336;
+}
+
+/*kulay ng home button sa may taas*/		
+ .w3-white,.w3-hover-white:hover{
+    color:black;
+    background-color:white;
+}
+
+/*get started na button*/
+ .w3-black{
+    color:#fff;
+    background-color:black;
+}
+
+/*2nd part na paragraph ng Loren Ipsum*/
+ .w3-light-grey{
+    color:#000;
+    background-color:#f1f1f1;
+}
+
+/*kulay ng 2nd paragraph na text ng loren ipsum*/
+ .w3-text-grey{
+    color:#757575;
+}
