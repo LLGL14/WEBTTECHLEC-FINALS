@@ -128,7 +128,6 @@
   const resultsContainer = document.getElementById("results");
   const submitButton = document.getElementById("submit");
 
-  // display quiz right away
   buildQuiz();
 
   const previousButton = document.getElementById("previous");
@@ -138,7 +137,6 @@
 
   showSlide(0);
 
-  // on submit, show results
   submitButton.addEventListener("click", showResults);
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
