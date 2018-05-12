@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="content">
+<div class="navbar">
+  <a href="index.html">HOME</a>
+  <a href="homepage.html">TOPICS</a>
+	<a href="#video">VIDEO TUTORIALS</a>
+</div>
+
+<div class="container-3-1">
+
+	<div class="row-topics">
+			<a href="topic1.html">
+				<div class="column-topics">
+					<h2 class="topic">NOTES</h2>
+				</div>
+			</a>
+			
+			<a href="topic4.html">
+				<div class="column-topics">
+					<h2 class="topic">QUIZ</h2>
+				</div>
+			</a>
+		</div>
+		
+		<div class="openquiz">
+		<button class="column-topics" onclick="showDiv()">START QUIZ</button>
+		<button class="column-topics" onclick="HideDiv()">ClOSE QUIZ</button>
+			<script>
+			function showDiv() {
+			document.getElementById('container').style.display = "block";
+			}
+			function HideDiv() {
+			document.getElementById('container').style.display = "none";
+			}
+			</script>
+			<div id="container"  style="display: none;">
+				<div class="quiz-container">
+					<div id="quiz"></div>
+				</div>
+				</br>
+				</br>
+				</br>
+					<center><button class="button-design" id="previous">Previous Question</button>
+					<button class="button-design"id="next">Next Question</button>
+					<button class="button-design" id="submit">Submit Quiz</button>
+					<button class="button-design"id="startover">Start Over</button></center>
+					<center><div id="results"></div></center>
+							<script src="js/quiz.js"></script>
+			</div>
+	</div>
+
+</div>
+<div class="footer-1">                                                                                                                        
+</div>
+
+<body>
+</html>
