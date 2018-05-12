@@ -1,0 +1,68 @@
+Commits on May 12, 2018
+CONFIGURING THE WEBSITE
+
+@LLGL14
+LLGL14 committed just now
+Verified   
+SAMPLE LOGIN
+
+@LLGL14
+LLGL14 committed an hour ago
+Verified   
+UPDATED WEBSITE, QUiZ AND MINOR ANIMATIONS
+
+@LLGL14
+LLGL14 committed 2 hours ago
+Verified   
+Commits on May 3, 2018
+Add files via upload
+
+@LLGL14
+LLGL14 committed 9 days ago
+Verified   
+ADDED VIDEO TUTORIAL SAMPLE
+
+@LLGL14
+LLGL14 committed 9 days ago
+Verified   
+UPDATED QUIZ2 TEMPLATE(TRIAL)
+
+@LLGL14
+LLGL14 committed 9 days ago
+Verified   
+UPDATED QUIZ
+
+@LLGL14
+LLGL14 committed 9 days ago
+Verified   
+ADDED INDEX AND CSS
+
+@LLGL14
+LLGL14 committed 9 days ago
+Verified   
+ADDED homepage.html
+
+@LLGL14
+LLGL14 committed 9 days ago
+Verified   
+ADDED OFFICIAL WEBSITE
+
+@LLGL14
+LLGL14 committed 9 days ago
+Verified   
+Commits on Apr 27, 2018
+Added javascript quiz 2 trial
+
+@LLGL14
+LLGL14 committed 16 days ago
+Verified   
+Added Templates and Trial Javascript quiz
+
+@LLGL14
+LLGL14 committed 16 days ago
+Verified   
+Commits on Apr 26, 2018
+Initial commit
+
+@LLGL14
+LLGL14 committed 16 days ago
