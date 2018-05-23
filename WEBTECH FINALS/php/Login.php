@@ -12,4 +12,5 @@
             <td><input type='password' name='user_pw' tabindex='2'/></td>
         </tr>
     </table>
+    <p>No acc?  </p> <a href = "registration.php">REGISTER</a>
 </form>

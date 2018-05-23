@@ -1,22 +1,42 @@
 <?php
 if(!isset($_POST['user_id']) || !isset($_POST['user_pw'])) exit;
-#this part should be imported from the database
+$servername = "localhost";
+$username = "root";
+$password = "";
+$bdname = "userbase";
+
+//create connection
+$conn = new mysqli($servername,$username,$password,userbase) or die(mysqli_eror());
+
+/*
+if ($conn->connect_error){
+    die("Connection failed" . $conn->connect_error);
+    exit;
+}
+*/
+
 $user_id = $_POST['user_id'];
 $user_pw = $_POST['user_pw'];
-$members = array('user1'=>array('pw'=>'pw1', 'name'=>'guy'),
-    'user2'=>array('pw'=>'pw2', 'name'=>'dude'),
-    'user3'=>array('pw'=>'pw3', 'name'=>'booy'));
 
-if(!isset($members[$user_id])) {
+$stmt = "SELECT * FROM useracc where UserID=$user_id";
+$result = $conn->query($stmt);
+
+//if the member ID is not in the array
+if($result->num_rows==0) {
     echo "<script>alert('wrong ID');history.back();</script>";
     exit;
 }
-if($members[$user_id]['pw'] != $user_pw) {
+$row = $result->fetch_array(MYSQLI_ASSOC);
+//if the password assigned to is wrong
+if($row['UserPassword']==user_pw) {
     echo "<script>alert('wrong password');history.back();</script>";
     exit;
 }
+$stmt2 = "SELECT LastName FROM person where PersonCode=$row[Person]";
+//alright, go ahead
 session_start();
 $_SESSION['user_id'] = $user_id;
-$_SESSION['user_name'] = $members[$user_id]['name'];
+$_SESSION['user_name'] = $conn->query($stmt2);
 ?>
+
 <meta http-equiv='refresh' content='0;url=main.php'>
