@@ -8,7 +8,7 @@ $members = array('user1'=>array('pw'=>'pw1', 'name'=>'guy'),
     'user3'=>array('pw'=>'pw3', 'name'=>'booy'));
 
 if(!isset($members[$user_id])) {
-    echo "<script>alert('worng password');history.back();</script>";
+    echo "<script>alert('wrong ID');history.back();</script>";
     exit;
 }
 if($members[$user_id]['pw'] != $user_pw) {
