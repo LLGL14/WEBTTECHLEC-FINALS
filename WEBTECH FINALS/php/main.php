@@ -6,7 +6,7 @@ if(!isset($_SESSION['user_id']) || !isset($_SESSION['user_name'])) {
 }
 $user_id = $_SESSION['user_id'];
 $user_name = $_SESSION['user_name'];
-echo "<p>hello. $user_name($user_id).</p>";
+
 echo "<p><a href='logout.php'>logout</a></p>";
 
 

@@ -6,7 +6,7 @@ $password = "";
 $bdname = "userbase";
 
 //create connection
-$conn = new mysqli($servername,$username,$password,userbase) or die(mysqli_eror());
+$conn = new mysqli($servername,$username,$password,$bdname) or die(mysqli_error());
 
 /*
 if ($conn->connect_error){
@@ -28,7 +28,7 @@ if($result->num_rows==0) {
 }
 $row = $result->fetch_array(MYSQLI_ASSOC);
 //if the password assigned to is wrong
-if($row['UserPassword']==user_pw) {
+if(!($row['UserPassword']==$user_pw)) {
     echo "<script>alert('wrong password');history.back();</script>";
     exit;
 }
