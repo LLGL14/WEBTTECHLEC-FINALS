@@ -34,10 +34,13 @@ $PerCode = $conn->query($stmt)+1;
 $stmt = "INSERT INTO person(PersonCode,FirstName,LastName) Values('PerCode','FirstName','LastName')";
 $conn->query($stmt);
 
-$
+$user_ID = $_POST['Useracc_UserID'];
+$user_PassWord = $_POST['Useracc_UserPassWordA'];
+$stmt = "SELECT MAX(UserCode)FROM useracc";
+$UseCode = $conn->query($stmt)+1;
 
-$stmt = "SELECT  FROM person";
-$result = $conn->query($stmt) or die(mysqli_error());
+$stmt = "INSERT INTO useracc(UserCode,UserID,UserPassword,Person) VALUES ('$UseCode','$user_ID','$user_PassWord','$PerCode')";
+$conn->query($stmt) or die(mysqli_error());
 
 $row = $result->fetch_array(MYSQLI_ASSOC);
 //if the password assigned to is wrong
