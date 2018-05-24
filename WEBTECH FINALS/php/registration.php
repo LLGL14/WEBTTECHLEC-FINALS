@@ -24,7 +24,8 @@
             <td><input type="password" name='Useracc_PasswordB' tabindex='5'/></td>
         </tr>
         <tr>
-            <td></td>
+            <td>Email</td>
+            <td><input type="text" name = 'Useracc_email' tabindex='6'/> </td>
         </tr>
         <td ><input type='submit' tabindex='6' value='go' style='height:50px'/></td>
     </table>
