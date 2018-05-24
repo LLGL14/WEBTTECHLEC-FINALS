@@ -20,7 +20,6 @@ CREATE TABLE UserAcc(
 	UserPassword varchar(20) Not Null 
     CHECK(UserPassword.Length()>6),
 	UserCode integer(10) Not Null unique CHECK(UserCode>0),
-    DateOfRegistration Date Not Null unique,
 	FOREIGN KEY (Person) References Person (PersonCode),
 	PRIMARY KEY (UserCode)
 );

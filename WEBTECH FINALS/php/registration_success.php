@@ -19,35 +19,33 @@ $bdname = "userbase";
 //create connection
 $conn = new mysqli($servername,$username,$password,$bdname);
 
-/*
+
 if ($conn->connect_error){
     die("Connection failed" . $conn->connect_error);
     exit;
 }
-*/
+
 
 $FirstName = $_POST['Person_FirstName'];
 $LastName = $_POST['Person_LastName'];
 
 $stmt = "SELECT MAX(PersonCode)FROM person";
 $PerCode_result = mysqli_query($conn,$stmt);
+
 $PerCode_row = $PerCode_result->fetch_row();
 $PerCode = (int)$PerCode_row[0]+1;
 
 $stmt = "INSERT INTO person (PersonCode ,FirstName ,LastName) Values('$PerCode','$FirstName','$LastName')";
 mysqli_query($conn,$stmt);
 
-$user_ID = $_POST['Useracc_UserID'];
-$user_PassWord = $_POST['Useracc_PasswordA'];
-$stmt = "SELECT MAX(UserCode)FROM useracc";
-$UserCode_result = $conn->query($stmt);
+$ID = $_POST['Useracc_UserID']; $PW = $_POST['Useracc_PasswordA'];
+$stmt = "SELECT MAX(UserCode) FROM useracc";
+$UserCode_result = mysqli_query($conn,$stmt);
 $UserCode_row = $UserCode_result->fetch_row();
 $UserCode = (int)$UserCode_row[0]+1;
-$stmt = "INSERT INTO useracc (UserCode, UserID, UserPassword, Person, DateOfRegistration) VALUES ('$UserCode','$user_ID','$user_PassWord','$PerCode',NOW())";
-mysqli_query($conn,$stmt);
 
-if(mysqli_error()) echo " error happened";
-
+$stmt = "INSERT INTO useracc VALUES ('$PerCode' ,'$ID' ,'$PW' ,'$UserCode')";
+mysqli_query($conn,$stmt) or die('fail to add');
 ?>
 
 <meta http-equiv='refresh' content='0;url=main.php'>
