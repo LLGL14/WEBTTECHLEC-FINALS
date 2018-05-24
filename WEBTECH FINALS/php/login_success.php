@@ -18,11 +18,11 @@ if ($conn->connect_error){
 $user_id = $_POST['user_id'];
 $user_pw = $_POST['user_pw'];
 
-$stmt = "SELECT * FROM useracc where UserID=$user_id";
+$stmt = "SELECT * FROM useracc where UserID='$user_id'";
 $result = $conn->query($stmt);
 
 //if the member ID is not in the array
-if($result->num_rows==0) {
+if($result->num_rows<1) {
     echo "<script>alert('wrong ID');history.back();</script>";
     exit;
 }
