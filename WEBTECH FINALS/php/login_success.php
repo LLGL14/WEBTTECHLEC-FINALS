@@ -37,6 +37,7 @@ $stmt2 = "SELECT LastName FROM person where PersonCode=$row[Person]";
 session_start();
 $_SESSION['user_id'] = $user_id;
 $_SESSION['user_name'] = $conn->query($stmt2);
+$conn->close();
 ?>
 
 <meta http-equiv='refresh' content='0;url=main.php'>
